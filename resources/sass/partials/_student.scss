@@ -1,0 +1,29 @@
+.student {
+    margin: 40px auto;
+    width: 400px;
+    height: 80px;
+    background: $brand_primary;
+    .student-left, .student-right {
+        float: left;
+        height: 100%;
+    }
+    .student-left {
+        padding: 0 10px;
+        width: 30%;
+        img {
+            margin-top: 5px;
+            height: 70px;
+            border-radius: 100%;
+        }
+    }
+    .student-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        color: white;
+        h3 {
+            font-size: 18px;
+        }
+    }
+}

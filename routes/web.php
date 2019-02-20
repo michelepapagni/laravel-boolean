@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('home');
+
+//Pagine Studenti
+Route::get('/studenti', 'StudentController@index')->name('students.index');
+Route::get('/studenti/{slug}', 'StudentController@show')->name('students.show');
+
+//Pagine Statiche
+Route::get('/privacy-policy', 'StaticPageController@privacyPolicy')->name('static.privacy');
+Route::get('/lavora-con-noi', 'StaticPageController@workWithUs')->name('static.work');
